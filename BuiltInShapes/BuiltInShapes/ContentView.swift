@@ -11,17 +11,16 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 10) {
             Rectangle()
-                .stroke(.orange,lineWidth: 25)
-            RoundedRectangle(cornerRadius: 20)
+                .strokeBorder(.orange,lineWidth: 25)
+          RoundedRectangle(cornerRadius: 20)
                 .fill(.red)
-            Capsule(style: .continuous)
+            Capsule(style: .circular)
                 .fill(.green)
                 .frame(height: 100)
-            Capsule(style: .circular)
+            Capsule(style: .continuous)
                 .fill(.yellow)
                 .frame(height: 100)
-            Circle()
-                .strokeBorder(.blue,lineWidth: 15)
+            Circle().strokeBorder(.blue,lineWidth: 10)
             Ellipse()
                 .fill(.purple)
         }
